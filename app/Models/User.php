@@ -45,9 +45,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-
-    public function isAdm(): bool
-    {
+    public function isAdm(): bool {
         return in_array($this->email, config('custom.admins'));
     }
 }

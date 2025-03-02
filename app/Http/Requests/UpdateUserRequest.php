@@ -15,11 +15,7 @@ class UpdateUserRequest extends StoreUserRequest
     {
         $rules = parent::rules();
 
-        $rules['password'] = [
-            'nullable',
-            'min:6',
-            'max:20',
-        ];
+        $rules['password'] = ['nullable', 'min:6', 'max:20'];
 
         return $rules;
     }

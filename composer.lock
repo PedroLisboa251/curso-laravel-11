@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2e112db0408005c7003ce2dd332e05f",
+    "content-hash": "ba5b9d56f41d29b1c857366413142e1c",
     "packages": [
         {
             "name": "brick/math",
@@ -6134,16 +6134,16 @@
         },
         {
             "name": "laravel/breeze",
-            "version": "v2.0.2",
+            "version": "v2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/breeze.git",
-                "reference": "c1056a600f4b009fd1f0c1e00ebb96decdcc0045"
+                "reference": "e456fe0db93d1f9f5ce3b2043739a0777404395c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/c1056a600f4b009fd1f0c1e00ebb96decdcc0045",
-                "reference": "c1056a600f4b009fd1f0c1e00ebb96decdcc0045",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/e456fe0db93d1f9f5ce3b2043739a0777404395c",
+                "reference": "e456fe0db93d1f9f5ce3b2043739a0777404395c",
                 "shasum": ""
             },
             "require": {
@@ -6155,8 +6155,9 @@
                 "symfony/console": "^7.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^9.0",
-                "phpstan/phpstan": "^1.10"
+                "laravel/framework": "^11.0",
+                "orchestra/testbench-core": "^9.0",
+                "phpstan/phpstan": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -6190,7 +6191,7 @@
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
             },
-            "time": "2024-04-01T15:17:09+00:00"
+            "time": "2025-02-11T13:19:28+00:00"
         },
         {
             "name": "laravel/pint",
@@ -6835,14 +6836,14 @@
             },
             "type": "library",
             "extra": {
-                "laravel": {
-                    "providers": [
-                        "Pest\\Laravel\\PestServiceProvider"
-                    ]
-                },
                 "pest": {
                     "plugins": [
                         "Pest\\Laravel\\Plugin"
+                    ]
+                },
+                "laravel": {
+                    "providers": [
+                        "Pest\\Laravel\\PestServiceProvider"
                     ]
                 }
             },
@@ -7000,6 +7001,41 @@
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
             "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "php_test/php_test",
+            "version": "v0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ankit10204/php_test_10204.git",
+                "reference": "e5ce3cc6bacdc9087ae38c96264fe10f8697753e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ankit10204/php_test_10204/zipball/e5ce3cc6bacdc9087ae38c96264fe10f8697753e",
+                "reference": "e5ce3cc6bacdc9087ae38c96264fe10f8697753e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "vlucas/phpdotenv": "^5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "test"
+            ],
+            "support": {
+                "issues": "https://github.com/ankit10204/php_test_10204/issues",
+                "source": "https://github.com/ankit10204/php_test_10204/tree/v0.0.2"
+            },
+            "time": "2023-04-11T13:34:56+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -9043,12 +9079,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

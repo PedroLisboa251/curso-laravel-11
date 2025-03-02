@@ -12,7 +12,7 @@ class StoreUserRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        return false;
     }
 
     /**
@@ -23,18 +23,19 @@ class StoreUserRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|string|min:3|max:255',
+            'name' => ['required', 'string', 'min:3','max:255'],
             'email' => [
                 'required',
+                'string',
                 'email',
-                // 'unique:users,email',
-                Rule::unique('users', 'email')->ignore($this->user, 'id')
+                'min: 6',
+                'max:20',
+                Rule::unique('users', 'email')->ignore($this->user, 'id'),
             ],
             'password' => [
                 'required',
-                'min:6',
-                'max:20',
-            ]
+                'min: 6',
+                'max:20'],
         ];
     }
 }
